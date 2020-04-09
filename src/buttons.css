@@ -1,0 +1,21 @@
+.button {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  background: yellow;
+  color: black;
+  font-size: 30px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.buttons-wrapper button {
+  height: 100px;
+  width: 100px;
+  font-size: 40px;
+}

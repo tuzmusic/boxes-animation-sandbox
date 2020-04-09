@@ -1,34 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import Box from "./BoxContainer";
+import Button from "./ButtonContainer";
 import "./appearance.css";
 import "./animation.css";
-
+import "./buttons.css";
 export default function App() {
-  const clickBox = i => setters[i](!states[i]);
-
-  const [clicked0, setClicked0] = useState(false);
-  const [clicked1, setClicked1] = useState(false);
-  const [clicked2, setClicked2] = useState(false);
-
-  const states = [clicked0, clicked1, clicked2];
-  const setters = [setClicked0, setClicked1, setClicked2];
-
-  function Box({ index }) {
-    let className = "box";
-    if (states[index]) className += " clicked";
-
-    return (
-      <div onClick={() => clickBox(index)} className={className}>
-        {index}
-      </div>
-    );
-  }
-
-  const Boxes = [0, 1, 2].map(i => <Box index={i} key={i} />);
-  const Buttons = [0, 1, 2].map(i => (
-    <button onClick={() => clickBox(i)} key={i}>
-      {i}
-    </button>
-  ));
+  const Boxes = Array(100)
+    .fill("")
+    .map((_, i) => <Box index={i} key={i} />);
+  const Buttons = [0].map(i => <Button index={i} key={i} />);
 
   return (
     <div className="app">
