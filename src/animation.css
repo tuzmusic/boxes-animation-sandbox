@@ -1,0 +1,41 @@
+.box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  border: solid 1px white;
+  /* margin-right: 0%; */
+  margin-left: 80%;
+  animation: borderanim 1s reverse;
+}
+
+.box.clicked {
+  border: solid yellow;
+  margin-left: 0%;
+  animation: borderanim 1s;
+  /* border: solid yellow 20px; */
+}
+
+@keyframes borderanim {
+  from {
+    border: solid yellow thin;
+  }
+  to {
+    border: solid yellow 20px;
+  }
+}
+
+@keyframes marginanim {
+  from {
+    margin-left: 80%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.boxes-wrapper {
+  display: flex;
+  flex-direction: column;
+}
