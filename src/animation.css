@@ -6,14 +6,16 @@
 
 .box.right {
   left: 100vw;
+  opacity: 0;
 }
 
 .box.center {
-  left: 0vw;
+  left: 12vw;
 }
 
 .box.left {
   left: -100vw;
+  opacity: 0;
 }
 
 .boxes-wrapper {

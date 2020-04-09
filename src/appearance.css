@@ -1,14 +1,14 @@
 /* basic appearance */
 .box {
-  width: 100vw;
+  width: 76vw;
   height: 100px;
   color: black;
   font-size: 50px;
-  border: solid black;
+  /* border: solid black; */
   box-sizing: border-box;
-  transition: 1s;
-  transition-timing-function: ease;
+  transition: all ease 1s;
   position: absolute;
+  z-index: 1;
 }
 
 .app {

@@ -10,9 +10,11 @@
 }
 
 .buttons-wrapper {
+  position: fixed;
   display: flex;
-  justify-content: space-around;
-  width: 50%;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 1001;
 }
 .buttons-wrapper button {
   height: 100px;

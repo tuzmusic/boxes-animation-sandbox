@@ -12,7 +12,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <div className="boxes-wrapper">{Boxes}</div>
+      {/* <div className="boxes-wrapper">{Boxes}</div> */}
       <div className="buttons-wrapper">{Buttons}</div>
     </div>
   );
